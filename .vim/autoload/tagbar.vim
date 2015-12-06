@@ -3001,6 +3001,7 @@ function! s:JumpToTag(stay_in_tagbar) abort
     call cursor(taginfo.fields.line - 1, taginfo.fields.column)
 
     normal! zv
+    call cursor(taginfo.fields.line, taginfo.fields.column)
 
     if a:stay_in_tagbar
         call s:HighlightTag(0)
