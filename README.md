@@ -35,17 +35,17 @@
         * ctrl-k     move cursor to up window in vim
         * ctrl-l     move cursor to right window in vim
     * search
-        ctrl-[ s   search variable or function in project (:cs find s word)
-        ctrl-[ t   search text in project (:cs find t word)
-        <F7>       highlight word under the cursor 
-        /word      search word in the file
+        * ctrl-[ s   search variable or function in project (:cs find s word)
+        * ctrl-[ t   search text in project (:cs find t word)
+        * <F7>       highlight word under the cursor 
+        * /word      search word in the file
     * open another file in project
-        F2         throught file tree
-        F8         throught opened file list
-        F4         switch of include file and implement file
+        * F2         throught file tree
+        * F8         throught opened file list
+        * F4         switch of include file and implement file
     * display
-        <F6>       switch of display invisible character or not 
-        <F10>      change tab display as space mount
+        * <F6>       switch of display invisible character or not 
+        * <F10>      change tab display as space mount
 4. write c/c++ code：
     * align
         * =          align selected code
