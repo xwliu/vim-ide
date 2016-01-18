@@ -8,10 +8,15 @@
 ### how to install and update
 
 1. centos, redhat, fedora install or update command:
+
       yum install ctags cscope wget unzip -y && wget https://github.com/langsim/vim-ide/archive/master.zip -O master.zip && unzip -o master.zip && cp -rf vim-ide-master/.vim* ~ ; rm -rf master.zip vim-ide-master
+
 2. debian, ubuntu install or update command:
+
       apt-get install ctags cscope wget unzip -y && wget https://github.com/langsim/vim-ide/archive/master.zip -O master.zip && unzip -o master.zip && cp -rf vim-ide-master/.vim* ~ ; rm -rf master.zip vim-ide-master
+
 3. mac install or update command, insure has installed brew, wget and unzip：
+
       brew install ctags cscope -y && hash ctags cscope wget unzip && wget https://github.com/langsim/vim-ide/archive/master.zip -O master.zip && unzip -o master.zip && cp -rf vim-ide-master/.vim* ~ ; rm -rf master.zip vim-ide-master
 
 
@@ -73,8 +78,8 @@ consuming less finger, less brain and less cpu to read and write code.
 3. 最官方、最全、最新的下载vim脚本插件的地方
     http://www.vim.org/scripts/index.php
 4. vim基本快捷键等
-    vim里使用man命令     http://blog.csdn.net/langsim/article/details/46592761
-    vim 技巧小结         http://9014348.blog.51cto.com/9004348/1640979
+    * vim里使用man命令     http://blog.csdn.net/langsim/article/details/46592761
+    * vim 技巧小结         http://9014348.blog.51cto.com/9004348/1640979
     提升效率的若干Vim技巧  http://www.dutor.net/index.php/2011/09/efficient-vim-tips/
     Vim技巧总结          http://qindamoni.com/blog/2015/01/13/vimji-qiao-zong-jie/
     VIM快捷键大全        http://bbs.jcwcn.com/thread-201082-1-1.html
@@ -105,10 +110,10 @@ consuming less finger, less brain and less cpu to read and write code.
 
 ### faq
 
-    怎么把光标移动到左边的文件树窗口或右边的函数列表窗口?
-        ctrl-h是向左边的窗口移动,ctrl-l是向右边的窗口移动
-    问什么不让行号默认显示？
-        右下角已经有了，不仅有行号，还有列号。
+* 怎么把光标移动到左边的文件树窗口或右边的函数列表窗口?
+    * ctrl-h是向左边的窗口移动,ctrl-l是向右边的窗口移动
+* 问什么不让行号默认显示？
+    * 右下角已经有了，不仅有行号，还有列号。
     按tab键默认输入4个空格还是一个tab?
         按tab键会输入4个空格，默认的行首缩进也是4个空格。如果项目要求是行首缩进是一个tab,将配置文件set expandtab改为set noexpandtab。
     tagbar怎么没有颜色了，默认的有？
