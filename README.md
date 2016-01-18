@@ -1,27 +1,27 @@
-where use it
+### where use it
     
-    system requirements：vim 7.2 or higher，support linux、 mac、 cygwin.
-    feature：browse c/c++, python project and improve experience to modify config file
-    difference：one command to install and it's experience is as much as source insight.
+* system requirements：vim 7.1 or higher，support linux、 mac、 cygwin.
+* feature：browse c/c++, python project and improve experience to modify config file
+* difference：one command to install and it's experience is as much as source insight.
 
 
-how to install and update
+### how to install and update
 
-    1.centos, redhat, fedora install or update command:
+1. centos, redhat, fedora install or update command:
       yum install ctags cscope wget unzip -y && wget https://github.com/langsim/vim-ide/archive/master.zip -O master.zip && unzip -o master.zip && cp -rf vim-ide-master/.vim* ~ ; rm -rf master.zip vim-ide-master
-    2.debian, ubuntu install or update command:
+2. debian, ubuntu install or update command:
       apt-get install ctags cscope wget unzip -y && wget https://github.com/langsim/vim-ide/archive/master.zip -O master.zip && unzip -o master.zip && cp -rf vim-ide-master/.vim* ~ ; rm -rf master.zip vim-ide-master
-    3.mac install or update command, insure has installed brew, wget and unzip：
+3. mac install or update command, insure has installed brew, wget and unzip：
       brew install ctags cscope -y && hash ctags cscope wget unzip && wget https://github.com/langsim/vim-ide/archive/master.zip -O master.zip && unzip -o master.zip && cp -rf vim-ide-master/.vim* ~ ; rm -rf master.zip vim-ide-master
 
 
-how to use it read and write c/c++ project
+### how to use it read and write c/c++ project
 
-    open project:
+1. open project:
         cd into project root dir，vim (press enter button), must in project root dir. press F2 to open file tree, and select file to open.
-    update index:
+2. update index:
         first time open project or update some code in project, press F5 to update index，the index function is same to source insight index.
-    read c/c++ code:
+3. read c/c++ code:
         1.jump
             F3         throught tagbar to jump to another function in the file
             gd         jump to local varibale defination
@@ -37,14 +37,16 @@ how to use it read and write c/c++ project
         2.search
             ctrl-[ s   search variable or function in project (:cs find s word)
             ctrl-[ t   search text in project (:cs find t word)
-            <F6>       switch of display invisible character or not 
             <F7>       highlight word under the cursor 
             /word      search word in the file
         3.open another file in project
             F2         throught file tree
             F8         throught opened file list
             F4         switch of include file and implement file
-    write c/c++ code：
+        4.display
+            <F6>       switch of display invisible character or not 
+            <F10>      change tab display as space mount
+4. write c/c++ code：
         1.align
             =          align selected code
             ==         align current line code
@@ -53,53 +55,55 @@ how to use it read and write c/c++ project
             .          uncomment selected code
         3.replace
             :%s /word1/word2/g  replace word1 to word2 in the file
+        4.expand tab to space or not
+            <F9>       exapnd tab to space or not
 
 
-hope
+### hope
 
-    consuming less finger, less brain and less cpu to read and write code.
-
-
-links
-
-    1、这个vim配置脚本的qq群
-        QQ群：342426998
-    2、vim官方网站
-        www.vim.org
-    3、最官方、最全、最新的下载vim脚本插件的地方
-        http://www.vim.org/scripts/index.php
-    4、vim基本快捷键等
-        vim里使用man命令     http://blog.csdn.net/langsim/article/details/46592761
-        vim 技巧小结         http://9014348.blog.51cto.com/9004348/1640979
-        提升效率的若干Vim技巧  http://www.dutor.net/index.php/2011/09/efficient-vim-tips/
-        Vim技巧总结          http://qindamoni.com/blog/2015/01/13/vimji-qiao-zong-jie/
-        VIM快捷键大全        http://bbs.jcwcn.com/thread-201082-1-1.html
-        快速提高 Vi/Vim 使用效率的原则与途径   http://www.ibm.com/developerworks/cn/linux/l-cn-tip-vim/
-        鸟哥 第九章、vim 程式編輯器            http://linux.vbird.org/linux_basic/0310vi.php
-        高效率编辑器 VIM－操作篇               https://linuxtoy.org/archives/efficient-editing-with-vim.html
-    5、与这个项目类似功能的项目会配置文件说明
-        use_vim_as_ide                      https://github.com/yangyangwithgnu/use_vim_as_ide
-        超强vim配置文件                     https://github.com/ma6174/vim
-        Vim as a Python IDE                 https://github.com/mbrochh/vim-as-a-python-ide
-        强大的vim配置文件,让编程更随意      http://www.cnblogs.com/ma6174/archive/2011/12/10/2283393.html
-        史上最强的Vim 配置文件              http://blog.csdn.net/redguardtoo/article/details/1172136
-        我的VIM配置及说明K-VIM              http://www.wklken.me/posts/2013/06/11/linux-my-vim.html
-        Vim配置文件全平台可用               http://www.oschina.net/code/snippet_103341_10313
-        将你的Vim 打造成轻巧强大的IDE  http://yuez.me/jiang-ni-de-vim-da-zao-cheng-qing-qiao-qiang-da-de-ide/
-        vim 配置文件                        http://blog.sciencenet.cn/blog-683919-667321.html
-    6、百科类vim说明
-        维基百科             https://zh.wikipedia.org/wiki/Vim
-        百度百科             http://baike.baidu.com/subview/113188/9338173.htm
-    7、vim相关论坛门户
-        ubuntu论坛vim/emacs页  http://forum.ubuntu.org.cn/viewforum.php?f=68
-        Vimer的程序世界        http://www.vimer.cn/
-        vim百度贴吧            http://tieba.baidu.com/f?kw=vim&fr=wwwt
-        水木vim板块            http://www.newsmth.net/nForum/#!board/VIM
-        知乎vim                http://www.zhihu.com/topic/19570193?page=2
-        豆瓣vim                http://www.douban.com/group/vim/
+consuming less finger, less brain and less cpu to read and write code.
 
 
-faq
+### links
+
+1. 这个vim配置脚本的qq群
+    QQ群：342426998
+2. vim官方网站
+    www.vim.org
+3. 最官方、最全、最新的下载vim脚本插件的地方
+    http://www.vim.org/scripts/index.php
+4. vim基本快捷键等
+    vim里使用man命令     http://blog.csdn.net/langsim/article/details/46592761
+    vim 技巧小结         http://9014348.blog.51cto.com/9004348/1640979
+    提升效率的若干Vim技巧  http://www.dutor.net/index.php/2011/09/efficient-vim-tips/
+    Vim技巧总结          http://qindamoni.com/blog/2015/01/13/vimji-qiao-zong-jie/
+    VIM快捷键大全        http://bbs.jcwcn.com/thread-201082-1-1.html
+    快速提高 Vi/Vim 使用效率的原则与途径   http://www.ibm.com/developerworks/cn/linux/l-cn-tip-vim/
+    鸟哥 第九章、vim 程式編輯器            http://linux.vbird.org/linux_basic/0310vi.php
+    高效率编辑器 VIM－操作篇               https://linuxtoy.org/archives/efficient-editing-with-vim.html
+5. 与这个项目类似功能的项目会配置文件说明
+    use_vim_as_ide                      https://github.com/yangyangwithgnu/use_vim_as_ide
+    超强vim配置文件                     https://github.com/ma6174/vim
+    Vim as a Python IDE                 https://github.com/mbrochh/vim-as-a-python-ide
+    强大的vim配置文件,让编程更随意      http://www.cnblogs.com/ma6174/archive/2011/12/10/2283393.html
+    史上最强的Vim 配置文件              http://blog.csdn.net/redguardtoo/article/details/1172136
+    我的VIM配置及说明K-VIM              http://www.wklken.me/posts/2013/06/11/linux-my-vim.html
+    Vim配置文件全平台可用               http://www.oschina.net/code/snippet_103341_10313
+    将你的Vim 打造成轻巧强大的IDE  http://yuez.me/jiang-ni-de-vim-da-zao-cheng-qing-qiao-qiang-da-de-ide/
+    vim 配置文件                        http://blog.sciencenet.cn/blog-683919-667321.html
+6. 百科类vim说明
+    维基百科             https://zh.wikipedia.org/wiki/Vim
+    百度百科             http://baike.baidu.com/subview/113188/9338173.htm
+7. vim相关论坛门户
+    ubuntu论坛vim/emacs页  http://forum.ubuntu.org.cn/viewforum.php?f=68
+    Vimer的程序世界        http://www.vimer.cn/
+    vim百度贴吧            http://tieba.baidu.com/f?kw=vim&fr=wwwt
+    水木vim板块            http://www.newsmth.net/nForum/#!board/VIM
+    知乎vim                http://www.zhihu.com/topic/19570193?page=2
+    豆瓣vim                http://www.douban.com/group/vim/
+
+
+### faq
 
     怎么把光标移动到左边的文件树窗口或右边的函数列表窗口?
         ctrl-h是向左边的窗口移动,ctrl-l是向右边的窗口移动

@@ -45,6 +45,28 @@ let OmniCpp_SelectFirstItem = 2
 let OmniCpp_ShowPrototypeInAbbr = 1 
 let OmniCpp_MayCompleteScope = 1
 
+func Turntabstop()
+
+    let tablength = &tabstop
+    if tablength == 1
+        set tabstop=2
+        set softtabstop=2
+        set shiftwidth=2
+    elseif tablength==2
+        set tabstop=4
+        set softtabstop=4
+        set shiftwidth=4
+    elseif tablength==4
+        set tabstop=8
+        set softtabstop=8
+        set shiftwidth=8
+    elseif tablength==8
+        set tabstop=1
+        set softtabstop=1
+        set shiftwidth=1
+    endif
+endfunc
+
 "file list
 map <silent> <F2> :NERDTreeToggle<cr>
 "tarbar functon list
@@ -59,7 +81,11 @@ map <F6> :set list!<cr>:set list?<cr>
 map <F7> ms:%s /\<<C-R>=expand("<cword>")<CR>\>//gn<cr>`s
 "swapfile list
 map <silent> <F8> :BufExplorer<CR>
-"comment visual line
+"switch tab expand to space or not
+map <F9> :set expandtab!<cr>:set expandtab?<cr>
+"switch tab expand to space or not
+map <F10> :call Turntabstop()<cr>:set tabstop?<cr>
+""comment visual line
 vnoremap <silent> , :call NERDComment(1, "alignLeft")<cr>
 "uncomment visual line
 vnoremap <silent> . :call NERDComment(1, "uncomment")<cr>
