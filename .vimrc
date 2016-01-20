@@ -45,7 +45,7 @@ let OmniCpp_SelectFirstItem = 2
 let OmniCpp_ShowPrototypeInAbbr = 1 
 let OmniCpp_MayCompleteScope = 1
 
-func Turntabstop()
+func! Turntabstop()
 
     let tablength = &tabstop
     if tablength == 1
@@ -84,7 +84,7 @@ map <silent> <F8> :BufExplorer<CR>
 "switch tab expand to space or not
 map <F9> :set expandtab!<cr>:set expandtab?<cr>
 "switch tab expand to space or not
-map <F10> :call Turntabstop()<cr>:set tabstop?<cr>
+map <silent> <F10> :call Turntabstop()<cr>:set tabstop?<cr>
 ""comment visual line
 vnoremap <silent> , :call NERDComment(1, "alignLeft")<cr>
 "uncomment visual line
