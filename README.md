@@ -66,8 +66,6 @@
 
 ### links
 
-* 这个vim配置脚本的问题讨论
-    * http://tieba.baidu.com/p/4080283383 
 * vim官方网站
     * www.vim.org
 * 最官方、最全、最新的下载vim脚本插件的地方
