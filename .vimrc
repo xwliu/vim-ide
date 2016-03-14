@@ -12,7 +12,7 @@ set hidden                       "can open other file when a file is not saved
 set ruler                        "show ruler at the right bottom
 set nowrap                       "disable auto newline
 set laststatus=2                 "status bar will show anytime
-set updatetime=800               "tagbar response 800ms
+set updatetime=200               "tagbar response 800ms
 set showmatch matchtime=0        "show the other bracket
 set wmnu wildmode=longest:full   "when in command mode can use auto complete same as bash
 set expandtab tabstop=4          "expand the tab to 4 space
@@ -25,17 +25,12 @@ set fileencodings=utf-8,cp936    "auto test the file is uft-8 or cp936
 set fileformats=unix,dos,mac     "line feed different in different mode
 set completeopt=menuone,longest
 
-highlight default link TagbarHighlight  Title
+highlight TagbarHighlight guifg=Green ctermfg=Green
 let NERDTreeQuitOnOpen=1
 let NERDTreeDirArrows=0
 let NERDTreeWinSize=40
 let NERDRemoveExtraSpaces=0
 let g:bufExplorerDisableDefaultKeyMapping = 1
-"let g:acp_behaviorKeywordCommand = "\<C-o>"
-"let g:acp_behaviorKeywordLength = -1
-"let g:acp_behaviorFileLength = -1
-"let g:SuperTabDefaultCompletionType = "<c-n>"
-"let g:SuperTabLongestHighlight = 1
 let g:tagbar_sort=0
 let g:tagbar_compact=1
 let g:tagbar_foldlevel=1
