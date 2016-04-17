@@ -1,21 +1,21 @@
-### where use it
+### Where use it
     
 * **system requirements：**vim 7.1 or higher，support linux、 mac、 cygwin.
 * **feature：**browse c/c++, python project and improve experience to modify config file
 * **difference：**one command to install and it's experience is as much as source insight.
 
 
-### how to install and update
+### How to install and update
 
-* **centos, redhat, fedora install or update command:**
+* **centos, redhat, fedora install command:**
     * yum install ctags cscope wget unzip -y && wget https://github.com/langsim/vim-ide/archive/master.zip -O master.zip && unzip -o master.zip && cp -rf vim-ide-master/.vim* ~ ; rm -rf master.zip vim-ide-master
-* **debian, ubuntu install or update command:**
+* **debian, ubuntu install command:**
     * apt-get install ctags cscope wget unzip -y && wget https://github.com/langsim/vim-ide/archive/master.zip -O master.zip && unzip -o master.zip && cp -rf vim-ide-master/.vim* ~ ; rm -rf master.zip vim-ide-master
-* **mac install or update command, insure has installed brew, wget and unzip:**
+* **mac install command, insure has installed brew, wget and unzip:**
     * brew install ctags cscope -y && hash ctags cscope wget unzip && wget https://github.com/langsim/vim-ide/archive/master.zip -O master.zip && unzip -o master.zip && cp -rf vim-ide-master/.vim* ~ ; rm -rf master.zip vim-ide-master
 
 
-### how to use it read and write c/c++ project
+### How to use it read and write c/c++ project
 
 * **open project:**
     * cd into project root dir，vim (press enter button). press F2 to open file tree, and select file to open.
@@ -58,12 +58,12 @@
         * **"F9":**         exapnd tab to space or not
 
 
-### hope
+### Hope
 
 * consuming less finger, less brain and less cpu to read and write code.
 
 
-### links
+### Links
 
 * vim官方网站
     * www.vim.org
@@ -100,7 +100,7 @@
     * 豆瓣vim                http://www.douban.com/group/vim/
 
 
-### faq
+### Faq
 
 * 怎么把光标移动到左边的文件树窗口或右边的函数列表窗口?
     * ctrl-h是向左边的窗口移动,ctrl-l是向右边的窗口移动
