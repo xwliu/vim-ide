@@ -1,28 +1,28 @@
 ### where use it
     
-* system requirements：vim 7.1 or higher，support linux、 mac、 cygwin.
-* feature：browse c/c++, python project and improve experience to modify config file
-* difference：one command to install and it's experience is as much as source insight.
+* **system requirements：**vim 7.1 or higher，support linux、 mac、 cygwin.
+* **feature：**browse c/c++, python project and improve experience to modify config file
+* **difference：**one command to install and it's experience is as much as source insight.
 
 
 ### how to install and update
 
-1. centos, redhat, fedora install or update command:
+* **centos, redhat, fedora install or update command:**
     * yum install ctags cscope wget unzip -y && wget https://github.com/langsim/vim-ide/archive/master.zip -O master.zip && unzip -o master.zip && cp -rf vim-ide-master/.vim* ~ ; rm -rf master.zip vim-ide-master
-2. debian, ubuntu install or update command:
+* **debian, ubuntu install or update command:**
     * apt-get install ctags cscope wget unzip -y && wget https://github.com/langsim/vim-ide/archive/master.zip -O master.zip && unzip -o master.zip && cp -rf vim-ide-master/.vim* ~ ; rm -rf master.zip vim-ide-master
-3. mac install or update command, insure has installed brew, wget and unzip：
+* **mac install or update command, insure has installed brew, wget and unzip:**
     * brew install ctags cscope -y && hash ctags cscope wget unzip && wget https://github.com/langsim/vim-ide/archive/master.zip -O master.zip && unzip -o master.zip && cp -rf vim-ide-master/.vim* ~ ; rm -rf master.zip vim-ide-master
 
 
 ### how to use it read and write c/c++ project
 
-1. open project:
-    * cd into project root dir，vim (press enter button), must in project root dir. press F2 to open file tree, and select file to open.
-2. update index:
-    * first time open project or update some code in project, press F5 to update index，the index function is same to source insight index.
-3. read c/c++ code:
-    * jump
+* **open project:**
+    * cd into project root dir，vim (press enter button). press F2 to open file tree, and select file to open.
+* **update index:**
+    * when first time open project, press F5 to update index. the index function is same to source insight index.
+* **read c/c++ code:**
+    * **jump**
         * **"F3":**         throught tagbar to jump to another function in the file
         * **"gd":**         jump to local varibale defination
         * **"ctrl-]":**     jump to variable or function defination in project。(can't jump to local variable defination) (:ts word)
@@ -34,28 +34,27 @@
         * **"ctrl-j":**     move cursor to down window in vim
         * **"ctrl-k":**     move cursor to up window in vim
         * **"ctrl-l":**     move cursor to right window in vim
-    * search
+    * **search**
         * **"ctrl-[ s":**   search variable or function in project (:cs find s word)
         * **"ctrl-[ t":**   search text in project (:cs find t word)
         * **"F7":**         highlight word under the cursor 
         * **"/word":**      search word in the file
-    * open another file in project
+    * **open another file in project**
         * **"F2":**         throught file tree
         * **"F8":**         throught opened file list
         * **"F4":**         switch of include file and implement file
-    * display
+    * **display**
         * **"F6":**         switch of display invisible character or not 
         * **"F10":**        change tab display as space mount
-4. write c/c++ code：
-    * align
+* **write c/c++ code：**
+    * **align**
         * **"=":**          align selected code
-        * **"==":**         align current line code
-    * comment
+    * **comment**
         * **",":**          comment selected code
         * **".":**          uncomment selected code
-    * replace
+    * **replace**
         * **":%s /word1/word2/g":**  replace word1 to word2 in the file
-    * expand tab to space or not
+    * **expand tab to space or not**
         * **"F9":**         exapnd tab to space or not
 
 
