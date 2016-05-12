@@ -2998,7 +2998,7 @@ function! s:JumpToTag(stay_in_tagbar) abort
 
     " Center the tag in the window and jump to the correct column if available
     normal! zt
-    call cursor(taginfo.fields.line - 1, taginfo.fields.column)
+    call cursor(taginfo.fields.line, taginfo.fields.column)
 
     normal! zv
     call cursor(taginfo.fields.line, taginfo.fields.column)
