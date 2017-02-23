@@ -6,12 +6,14 @@ set background=dark  "dark light "can switch it to find which is look pretty
 set nocompatible                 "some plugin need it
 set hlsearch                     "highlight the search
 set incsearch                    "move to fit position after one char input
+set ignorecase	"搜索忽略大小写
 set nobackup                     "won't produce the backup file when save file
 set nowritebackup                "won't produce the backup file when save file
 set noswapfile                   "won't use swapfile
 set hidden                       "can open other file when a file is not saved
 set ruler                        "show ruler at the right bottom
 set nowrap                       "disable auto newline
+set whichwrap=b,s,<,>,[,]       " 光标从行首和行末时可以跳到另一行去 
 set laststatus=2                 "status bar will show anytime
 set updatetime=200               "tagbar response 800ms
 set showmatch matchtime=0        "show the other bracket
