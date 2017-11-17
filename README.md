@@ -11,6 +11,8 @@
     * yum install ctags cscope wget unzip -y && wget https://github.com/langsim/vim-ide/archive/master.zip -O master.zip && unzip -o master.zip && \cp -rf vim-ide-master/.vim* ~ ; rm -rf master.zip vim-ide-master
 * **debian, ubuntu install command:**
     * apt-get install ctags cscope wget unzip -y && wget https://github.com/langsim/vim-ide/archive/master.zip -O master.zip && unzip -o master.zip && \cp -rf vim-ide-master/.vim* ~ ; rm -rf master.zip vim-ide-master
+    * sudo apt-get install ctags cscope wget unzip
+    * git clone https://github.com/xwliu/vim-ide.git && \cp -rf vim-ide/.vim* ~ ; rm -rf vim-ide
 * **mac install command, insure has installed brew, wget and unzip:**
     * brew install ctags cscope -y && hash ctags cscope wget unzip && wget https://github.com/langsim/vim-ide/archive/master.zip -O master.zip && unzip -o master.zip && \cp -rf vim-ide-master/.vim* ~ ; rm -rf master.zip vim-ide-master
 
@@ -57,11 +59,11 @@
     * **expand tab to space or not**
         * **"F9":**         exapnd tab to space or not
 
-打开项目:
+### 打开项目:
     cd到工程根目录下，vim (回车),必须是工程根目录。按F2打开文件列表，选择文件打开。
-建立索引：
+### 建立索引：
     第一次打开项目，及代码更新后按F5更新索引，这个索引与source insight中的更新索引意义相同。
-浏览C/C++代码:
+### 浏览C/C++代码:
     浏览代码会常用的几个功能:
     1.跳转
         F3         通过tagbar函数列表跳转到当前文件的某个函数
@@ -91,7 +93,7 @@
         ctrl-[ f   跳转到文件名含有光标下单词的文件。
         ctrl-[ i   跳转到包含光标下单词对应文件的文件。
         ctrl-[ I   跳转到包含当前文件的文件。
-编写C/C++代码：
+### 编写C/C++代码：
     1.替换功能
         :%s /word1/word2/g 将这个文件里的word1替换成word2。
     2.对齐代码
