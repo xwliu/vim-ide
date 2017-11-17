@@ -6,7 +6,8 @@ set background=dark  "dark light "can switch it to find which is look pretty
 set nocompatible                 "some plugin need it
 set hlsearch                     "highlight the search
 set incsearch                    "move to fit position after one char input
-set ignorecase	"搜索忽略大小写
+set ignorecase	                 "搜索忽略大小写
+set nu                           "显示行号
 set nobackup                     "won't produce the backup file when save file
 set nowritebackup                "won't produce the backup file when save file
 set noswapfile                   "won't use swapfile
