@@ -25,7 +25,9 @@ set shiftwidth=4                 "make the indent 4 length
 set softtabstop=4                "backspace can del 4 space
 set lcs=eol:$,tab:\|\            "display tab to green line
 set backspace=indent,eol,start   "better backspace
-set fileencodings=utf-8,cp936    "auto test the file is uft-8 or cp936
+set encoding=utf-8
+set termencoding=utf-8
+set fileencodings=utf-8,cp936,gbk,latin1    "auto test the file is uft-8 or cp936
 set fileformats=unix,dos,mac     "line feed different in different mode
 set completeopt=menuone,longest
 
