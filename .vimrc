@@ -40,6 +40,8 @@ set foldlevelstart=99       " 打开文件是默认不折叠代码
 nnoremap <space> @=((foldclosed(line('.')) < 0) ? 'zc' : 'zo')<CR>
 "                            " 用空格键来开关折叠
 
+set statusline=%f%m%r%h%w%=\[%{&ff}\|%{&fenc}][row:%l/%L,col:%c][%p%%]
+
 highlight TagbarHighlight guifg=Green ctermfg=Green
 let NERDTreeQuitOnOpen=1
 let NERDTreeDirArrows=0
